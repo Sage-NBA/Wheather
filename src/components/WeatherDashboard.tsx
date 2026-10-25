@@ -272,13 +272,11 @@ export default function WeatherDashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b131e] text-white flex items-center justify-center p-3 sm:p-6 lg:p-10 font-sans selection:bg-[#0095ff]/30">
-      {/* Outer Dashboard Window Container */}
-      <div className="w-full max-w-[1200px] bg-[#141d2b] border border-[#1f2d42] rounded-[32px] shadow-2xl p-4 sm:p-6 lg:p-8 flex flex-col md:flex-row gap-6 relative overflow-hidden">
-        {/* =========================================
-            LEFT VERTICAL SIDEBAR
-        ========================================= */}
-        <aside className="w-full md:w-20 bg-[#202b3b] rounded-2xl md:rounded-[24px] py-4 px-3 flex md:flex-col items-center justify-between md:justify-start gap-4 md:gap-7 shrink-0">
+    <div className="min-h-screen w-full bg-[#0b131e] text-white p-4 sm:p-6 lg:p-8 flex flex-col md:flex-row gap-6 font-sans selection:bg-[#0095ff]/30">
+      {/* =========================================
+          LEFT VERTICAL SIDEBAR
+      ========================================= */}
+      <aside className="w-full md:w-20 bg-[#202b3b] rounded-2xl md:rounded-[24px] py-4 px-3 flex md:flex-col items-center justify-between md:justify-start gap-4 md:gap-7 shrink-0">
           {/* Logo Wind Icon */}
           <div className="w-12 h-12 rounded-2xl bg-[#2a384e] flex items-center justify-center text-[#38bdf8] shadow-inner">
             <Wind size={24} strokeWidth={2.2} />
@@ -744,7 +742,6 @@ export default function WeatherDashboard() {
             Live Open-Meteo API Feed
           </div>
         </div>
-      </div>
     </div>
   );
 }
